@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+
+<html lang="hi">
+
+<head>
+  
+<meta charset="UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>मेरी शानदार वेबसाइट</title>
+  
+<link rel="stylesheet" href="style.css">
+
+  
+<!-- Google Analytics -->
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXX">
+</script>
+ 
+ <script>
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // Replace with your GA Measurement ID
+  
+</script>
+
+
+  <!-- EmailJS Library -->
+ 
+ <script src="https://cdn.emailjs.com/dist/email.min.js">
+</script>
+  
+<script>
+
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+    })();
+  
+</script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+
+    <div class="container nav-wrap">
+
+      <h1 class="logo">
+मेरी वेबसाइट
+</h1>
+ 
+     <nav id="nav">
+
+        <a href="#home">
+Home
+</a>
+  
+      <a href="#about">
+About
+</a>
+
+        <a href="#gallery">
+Gallery
+</a>
+
+        <a href="#contact">
+Contact
+</a>
+
+        <button id="darkModeBtn" class="dark-toggle">
+🌙
+</button>
+        <button id="menuBtn" class="menu">
+☰
+</button>
+ 
+     </nav>
+
+    </div>
+
+  </header>
+
+ 
+ <!-- Home Section -->
+ 
+ <section id="home" class="section hero">
+   
+ <div class="container grid2">
+     
+ <div>
+        <h2>
+नमस्ते! 👋
+</h2>
+
+        <p>
+यह वेबसाइट Dark Mode, Live Chat, Google Analytics और WhatsApp integration के साथ पूरी तरह responsive है।
+</p>
+        
+<a class="btn" href="#contact">
+Contact Me
+</a>
+
+      </div>
+ 
+     <div class="hero-img">
+
+        <img src="images/img1.jpg" alt="Hero Image">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="section alt">
+
+    <div class="container grid2">
+
+      <div>
+        <h2>
+About
+</h2>
+  
+      <p>
+यहाँ अपने बारे में जानकारी लिखें — आप क्या करते हैं, आपकी services क्या हैं, और achievements।
+</p>
+        
+<ul class="check">
+
+          <li>
+Dark Mode + Live Chat
+</li>
+          
+<li>
+Responsive design
+</li>
+       
+   <li>
+EmailJS + File Upload
+</li>
+    
+    </ul>
+     
+ </div>
+   
+   <div class="card">
+       
+ <h3>
+Highlights
+</h3>
+ 
+       <p>
+• Modern UI • Secure • Google Analytics
+</p>
+      
+</div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Gallery Section -->
+
+  <section id="gallery" class="section">
+    
+<div class="container">
+
+      <h2>
+Gallery
+</h2>
+ 
+     <div class="gallery">
+
+        <figure>
+<img src="images/img1.jpg" alt="">
+<figcaption>
+Caption 1
+</figcaption>
+</figure>
+ 
+       <figure>
+<img src="images/img2.jpg" alt="">
+<figcaption>
+Caption 2
+</figcaption>
+</figure>
+
+        <figure>
+<img src="images/img3.jpg" alt="">
+<figcaption>
+Caption 3
+</figcaption>
+</figure>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+
+  <section id="contact" class="section alt">
+
+    <div class="container">
+     
+ <h2>
+Contact
+</h2>
+
+      <form id="contactForm" class="form" enctype="multipart/form-data">
+
+        <div class="row">
+
+          <label>
+नाम
+            
+<input type="text" name="from_name" required placeholder="Mahendra Thakur">
+ 
+         </label>
+          
+<label>
+ईमेल
+            
+<input type="email" name="from_email" required placeholder="bhagchandrat@gmail.com">
+          
+</label>
+
+        </div>
+ 
+       <label>
+संदेश
+          
+<textarea name="message" rows="5" required placeholder="अपना संदेश लिखें…">
+</textarea>
+        
+</label>
+        <label>
+फ़ाइल अटैच करें
+          
+<input type="file" name="file" accept=".jpg,.png,.pdf,.doc,.docx,.txt">
+ 
+       </label>
+        
+<button type="submit" class="btn">
+Send Message
+</button>
+       
+ <p id="formMsg" class="msg">
+</p>
+      
+</form>
+    </div>
+ 
+ </section>
+
+
+  <!-- Footer -->
+ 
+ <footer>
+ 
+   <p>
+&copy; 
+<span id="year">
+</span> 
+आपकी वेबसाइट • All rights reserved.
+</p>
+ 
+ </footer>
+
+
+  <!-- WhatsApp Floating Button -->
+
+  <a href="https://wa.me/8120751922" target="_blank" id="whatsappBtn" title="Chat on WhatsApp">
+💬
+</a>
+
+ 
+ <!-- Live Chat (Tawk.to) -->
+
+  <script type="text/javascript">
+
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/1xyz'; // Replace with your Tawk.to Property ID
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  
+</script>
+
+  
+<script src="script.js">
+</script>
+
+</body>
+
+</html>
